@@ -16,5 +16,6 @@ import matplotlib #only needed to determine Matplotlib version number
 #%matplotlib inline
 
 
-print ('Hello World!')
+print ('Hello World!!')
 print ("Welcome to Python!")
+print ("Update to Add Text 1!")
