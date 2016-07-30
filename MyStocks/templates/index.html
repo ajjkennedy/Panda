@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Stock Visualizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href={{ url_for('static', filename='./bower_components/bootstrap/dist/css/bootstrap.min.css') }} rel="stylesheet" media="screen">
+    <link href={{ url_for('static', filename='main.css') }} rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">My Stock Watcher</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Stocks</a></li> 
+          <li><a href="#">FTSE-100</a></li> 
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid" id="head">
+      Nasdaq Stock Viewer
+    </div>
+
+    <div class="container">
+      <div class="row">
+         <div id="chart">
+          
+         </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-4">
+
+            <div class = "panel panel-default">
+               <div class = "panel-heading panel-heading-custom">
+                  <h3 class = "panel-title">Stock 1</h3>
+               </div>
+               
+               <div class = "panel-body">
+                  Stock Details 1
+               </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-4">COL 2</div>
+          <div class="col-md-4">COL 3</div>
+      </div>
+    </div>
+
+    <script src={{ url_for('static', filename='./bower_components/jquery/dist/jquery.min.js') }}></script>
+    <script src={{ url_for('static', filename='./bower_components/bootstrap/dist/js/bootstrap.min.js') }}></script>
+    <script src={{ url_for('static', filename='./bower_components/d3/d3.min.js') }}></script>
+    
+    <script src={{ url_for('static', filename='main.js') }}></script>
+  </body>
+</html>

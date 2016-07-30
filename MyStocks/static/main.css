@@ -1,0 +1,29 @@
+/* custom css */
+
+body {
+  padding-top: 10px;
+  font: 12px sans-serif;
+  font-weight: bold;
+}
+
+#head {
+	  background: #e3e3e3;
+	  overflow: hidden;
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+}
+
+#container {
+	border:solid 2px black;
+}
+
+container-fluid {
+  background: green;
+}
+
+h1 {
+  text-align: left;
+}
+h2 {
+  text-align: left;
+}

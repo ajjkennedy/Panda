@@ -19,3 +19,20 @@ import matplotlib #only needed to determine Matplotlib version number
 print ('Hello World!!')
 print ("Welcome to Python!")
 print ("Update to Add Text 1!")
+
+print('Python version ' + sys.version)
+print('Pandas version ' + pd.__version__)
+print('Matplotlib version ' + matplotlib.__version__)
+
+names = ['Bob','Jessica','Mary','John','Mel']
+births = [968, 155, 77, 578, 973]
+
+# zip?
+
+BabyDataSet = list(zip(names,births))
+BabyDataSet
+
+df = pd.DataFrame(data = BabyDataSet, columns=['Names', 'Births'])
+df
+
+df.to_csv('births1880.csv',index=False,header=False)
